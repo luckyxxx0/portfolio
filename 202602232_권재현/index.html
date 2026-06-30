@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lucky의 자기소개 포트폴리오 웹사이트" />
+  <title>Lucky Portfolio</title>
+  <link rel="icon" href="assets/profile-card.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-app-bar">
+    <a class="brand" href="index.html" aria-label="Lucky Portfolio home">
+      <span class="brand-mark">L</span>
+      <span>Lucky</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="nav-link active" href="index.html">소개</a>
+      <a class="nav-link" href="activities.html">활동</a>
+    </nav>
+    <button class="icon-button" id="themeToggle" type="button" aria-label="테마 전환" title="테마 전환">
+      <span aria-hidden="true">◐</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Portfolio Website</p>
+        <h1>꾸준히 배우고, 직접 만들며 성장하는 사람입니다.</h1>
+        <p class="hero-text">
+          안녕하세요. 저는 새로운 기술을 빠르게 익히고 작은 아이디어를 실제 결과물로 만드는 데 관심이 많은 Lucky입니다.
+          이 포트폴리오는 저의 소개와 주요 활동을 간결하게 담은 웹사이트입니다.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="activities.html">활동 보기</a>
+          <a class="button secondary" href="#contact">연락하기</a>
+        </div>
+      </div>
+      <div class="profile-panel" aria-label="Profile summary">
+        <img class="profile-image" src="assets/profile-card.png" alt="추상적인 노트북 작업 공간 일러스트" />
+        <div class="profile-meta">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>Open to learn, build, and collaborate</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">About Me</p>
+        <h2>제가 중요하게 생각하는 것</h2>
+      </div>
+      <div class="value-grid">
+        <article class="value-card">
+          <span class="material-symbol" aria-hidden="true">◎</span>
+          <h3>실행력</h3>
+          <p>아이디어를 말로만 남기지 않고, 작게라도 빠르게 만들어 확인합니다.</p>
+        </article>
+        <article class="value-card">
+          <span class="material-symbol" aria-hidden="true">◇</span>
+          <h3>배움</h3>
+          <p>모르는 부분을 기록하고 반복해서 개선하며 지식을 제 것으로 만듭니다.</p>
+        </article>
+        <article class="value-card">
+          <span class="material-symbol" aria-hidden="true">✦</span>
+          <h3>소통</h3>
+          <p>결과물의 목적과 사용자를 먼저 생각하며 함께 일하는 방식을 좋아합니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <div>
+        <p class="eyebrow">Skills</p>
+        <h2>관심 기술</h2>
+        <p class="section-copy">
+          웹의 기본기를 중심으로 HTML, CSS, JavaScript를 익히고 있으며,
+          깔끔한 UI와 반응형 레이아웃을 구현하는 데 관심이 있습니다.
+        </p>
+      </div>
+      <div class="chip-cloud" aria-label="Skill list">
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Responsive Design</span>
+        <span class="chip">GitHub Pages</span>
+        <span class="chip">UI Design</span>
+      </div>
+    </section>
+
+    <section class="contact-band" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>함께 만들고 싶은 일이 있다면</h2>
+        <p>GitHub에서 프로젝트를 확인하거나 아래 이메일 버튼을 눌러 연락처를 복사할 수 있습니다.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="button primary" href="https://github.com/luckyxxx0/portfolio" target="_blank" rel="noreferrer">GitHub 보기</a>
+        <button class="button secondary" id="copyEmail" type="button" data-email="hello@example.com">이메일 복사</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Lucky Portfolio</span>
+    <a href="activities.html">Activities</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lucky의 활동 목록 포트폴리오 페이지" />
+  <title>Activities | Lucky Portfolio</title>
+  <link rel="icon" href="assets/profile-card.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-app-bar">
+    <a class="brand" href="index.html" aria-label="Lucky Portfolio home">
+      <span class="brand-mark">L</span>
+      <span>Lucky</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="nav-link" href="index.html">소개</a>
+      <a class="nav-link active" href="activities.html">활동</a>
+    </nav>
+    <button class="icon-button" id="themeToggle" type="button" aria-label="테마 전환" title="테마 전환">
+      <span aria-hidden="true">◐</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Activities</p>
+      <h1>활동 목록</h1>
+      <p>프로젝트, 학습, 커뮤니티 활동을 한눈에 확인할 수 있도록 정리했습니다.</p>
+    </section>
+
+    <section class="activity-tools" aria-label="Activity tools">
+      <div class="search-field">
+        <span aria-hidden="true">⌕</span>
+        <input id="activitySearch" type="search" placeholder="활동 검색" aria-label="활동 검색" />
+      </div>
+      <div class="filter-group" aria-label="Activity category filters">
+        <button class="filter-chip active" type="button" data-filter="all">전체</button>
+        <button class="filter-chip" type="button" data-filter="project">프로젝트</button>
+        <button class="filter-chip" type="button" data-filter="study">학습</button>
+        <button class="filter-chip" type="button" data-filter="community">커뮤니티</button>
+      </div>
+    </section>
+
+    <section class="timeline" id="activityList" aria-live="polite">
+      <article class="activity-card" data-category="project" data-keywords="portfolio html css javascript github pages">
+        <div class="activity-date">2026</div>
+        <div>
+          <span class="tag">프로젝트</span>
+          <h2>개인 포트폴리오 웹사이트 제작</h2>
+          <p>HTML, CSS, JavaScript만으로 반응형 포트폴리오를 만들고 GitHub Pages 배포를 준비했습니다.</p>
+        </div>
+      </article>
+      <article class="activity-card" data-category="study" data-keywords="responsive design material ui css layout">
+        <div class="activity-date">2026</div>
+        <div>
+          <span class="tag">학습</span>
+          <h2>반응형 웹 디자인 학습</h2>
+          <p>모바일과 데스크톱에서 자연스럽게 보이는 레이아웃, 카드, 버튼, 네비게이션 패턴을 연습했습니다.</p>
+        </div>
+      </article>
+      <article class="activity-card" data-category="project" data-keywords="javascript interaction search filter theme">
+        <div class="activity-date">2026</div>
+        <div>
+          <span class="tag">프로젝트</span>
+          <h2>기본 JavaScript 인터랙션 구현</h2>
+          <p>검색, 카테고리 필터, 테마 전환, 복사 알림처럼 작은 기능을 직접 구현했습니다.</p>
+        </div>
+      </article>
+      <article class="activity-card" data-category="community" data-keywords="github documentation readme collaboration">
+        <div class="activity-date">2026</div>
+        <div>
+          <span class="tag">커뮤니티</span>
+          <h2>GitHub 프로젝트 정리</h2>
+          <p>README를 작성하고 저장소 구조를 단순하게 유지해 다른 사람이 프로젝트를 쉽게 확인할 수 있게 했습니다.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Lucky Portfolio</span>
+    <a href="index.html">Home</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
